@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InterFloor n Interior</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="interfloor.js"></script>
+</head>
+<body>
+
+<header class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="#home">
+            <img src="logo.jpg" alt="Company Logo" width="30" height="30" class="d-inline-block align-top">
+            InterFloor n Interior
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#get-quote">Get Quote</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero text-center" id="hero">
+    <div class="container">
+        <h1 class="hero-heading animated fadeIn">Welcome To Interfloor</h1>
+    </div>
+</section>
+
+
+<!-- Project Filter -->
+<section class="project-filter text-center">
+    <h1>Our Recent Project Gallery</h1>
+    <div class="btn-group" role="group" aria-label="Project Filter">
+        <button type="button" class="btn btn-primary filter-btn" data-filter="all">All Projects</button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="residential">Residential</button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="hospitality">Hospitality</button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="office">Office</button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="commercial">Commercial</button>
+    </div>
+</section>
+
+<!-- Project Gallery -->
+<section class="project-gallery container" id="project-gallery">
+        <div class="row">
+        <div class="col-md-4 project-item" data-category="residential">
+            <img src="image1.jpg" alt="Residential Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Residential Project 1</h3>
+                <p>Modern family home featuring sustainable design.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="hospitality">
+            <img src="30.jpg" alt="Hospitality Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Hospitality Project 1</h3>
+                <p>Charming boutique hotel with a cozy ambiance.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="office">
+            <img src="28.jpg" alt="Office Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Office Project 1</h3>
+                <p>Innovative workspace designed for collaboration.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="commercial">
+            <img src="20.jpg" alt="Commercial Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Commercial Project 1</h3>
+                <p>Contemporary retail space maximizing customer experience.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="residential">
+            <img src="image15.jpg" alt="Residential Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Residential Project 2</h3>
+                <p>Elegant townhouse with a modern flair.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="hospitality">
+            <img src="image6.jpg" alt="Hospitality Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Hospitality Project 2</h3>
+                <p>Luxurious resort with stunning ocean views.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="office">
+            <img src="image7.jpg" alt="Office Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Office Project 2</h3>
+                <p>High-tech office designed for productivity.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="commercial">
+            <img src="image8.jpg" alt="Commercial Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Commercial Project 2</h3>
+                <p>State-of-the-art showroom highlighting products.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="residential">
+            <img src="image9.jpg" alt="Residential Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Residential Project 3</h3>
+                <p>Eco-friendly home integrated with nature.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="hospitality">
+            <img src="image10.jpg" alt="Hospitality Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Hospitality Project 3</h3>
+                <p>Modern inn with unique local touches.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="office">
+            <img src="image11.jpg" alt="Office Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Office Project 3</h3>
+                <p>Dynamic work environment fostering creativity.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="residential">
+            <img src="image12.jpg" alt="Residential Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Residential Project 3</h3>
+                <p>Eco-friendly home integrated with nature.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="hospitality">
+            <img src="image13.jpg" alt="Hospitality Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Hospitality Project 3</h3>
+                <p>Modern inn with unique local touches.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="office">
+            <img src="image14.jpg" alt="Office Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Office Project 3</h3>
+                <p>Dynamic work environment fostering creativity.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="residential">
+            <img src="image15.jpg" alt="Residential Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Residential Project 3</h3>
+                <p>Eco-friendly home integrated with nature.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="hospitality">
+            <img src="image17.jpg" alt="Hospitality Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Hospitality Project 3</h3>
+                <p>Modern inn with unique local touches.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="office">
+            <img src="image18.jpg" alt="Office Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Office Project 3</h3>
+                <p>Dynamic work environment fostering creativity.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="residential">
+            <img src="image19.jpg" alt="Residential Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Residential Project 3</h3>
+                <p>Eco-friendly home integrated with nature.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="hospitality">
+            <img src="image20.jpg" alt="Hospitality Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Hospitality Project 3</h3>
+                <p>Modern inn with unique local touches.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="office">
+            <img src="image21.jpg" alt="Office Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Office Project 3</h3>
+                <p>Dynamic work environment fostering creativity.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="residential">
+            <img src="26.jpg" alt="Residential Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Residential Project 3</h3>
+                <p>Eco-friendly home integrated with nature.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="hospitality">
+            <img src="24.jpg" alt="Hospitality Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Hospitality Project 3</h3>
+                <p>Modern inn with unique local touches.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="office">
+            <img src="image23.jpg" alt="Office Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Office Project 3</h3>
+                <p>Dynamic work environment fostering creativity.</p>
+            </div>
+        </div>
+        <div class="col-md-4 project-item" data-category="office">
+            <img src="image22.jpg" alt="Office Project" class="img-fluid">
+            <div class="overlay">
+                <h3>Office Project 3</h3>
+                <p>Dynamic work environment fostering creativity.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services container my-5" id="services">
+    <!-- Company Introduction -->
+    <div class="text-center mb-5 text-light">
+        <h2 class="section-title display-4">Welcome to Interflor Interior</h2>
+        <p class="lead">At Interflor Interior, we specialize in creating unique and aesthetically pleasing spaces that reflect your personality and enhance your living experience. With a team of expert designers and years of experience, we offer personalized interior design services tailored to your needs.</p>
+    </div>
+
+    <!-- Existing Service Section -->
+    <h2 class="section-title text-center mb-4">Our Interior Design Services</h2>
+    <p class="text-center mb-5 text-light">Explore our range of services tailored to transform your living and working spaces.</p>
+    
+    <div class="row">
+        <!-- Color Consultation Card -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-lg hover-shadow text-light" style="transition: transform 0.2s;">
+                <div class="card-body text-center">
+                    <i class="fas fa-paint-brush fa-3x mb-3" style="color: #4a90e2;"></i>
+                    <h5 class="card-title">Color Consultation</h5>
+                    <p class="card-text">Our color experts provide tailored consultations to help you choose the perfect palette for your space, enhancing mood and aesthetics.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Space Planning Card -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-lg hover-shadow text-light" style="transition: transform 0.2s;">
+                <div class="card-body text-center">
+                    <i class="fas fa-couch fa-3x mb-3" style="color: #7ed321;"></i>
+                    <h5 class="card-title">Space Planning</h5>
+                    <p class="card-text">Maximize functionality with our space planning services. We design layouts that make the best use of available space, ensuring comfort and flow.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Lighting Design Card -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-lg hover-shadow text-light" style="transition: transform 0.2s;">
+                <div class="card-body text-center">
+                    <i class="fas fa-lightbulb fa-3x mb-3" style="color: #f39c12;"></i>
+                    <h5 class="card-title">Lighting Design</h5>
+                    <p class="card-text">Illuminate your space with our lighting design services. We create customized lighting solutions that enhance both functionality and ambiance.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Interior Renovation Card -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-lg hover-shadow text-light" style="transition: transform 0.2s;">
+                <div class="card-body text-center">
+                    <i class="fas fa-archway fa-3x mb-3" style="color: #e74c3c;"></i>
+                    <h5 class="card-title">Interior Renovation</h5>
+                    <p class="card-text">Transform your home with our interior renovation services. We specialize in remodeling spaces to reflect your personal style and needs.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Furniture Selection Card -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-lg hover-shadow text-light" style="transition: transform 0.2s;">
+                <div class="card-body text-center">
+                    <i class="fas fa-home fa-3x mb-3" style="color: #3498db;"></i>
+                    <h5 class="card-title">Furniture Selection</h5>
+                    <p class="card-text">Our experts assist in selecting the right furniture pieces that complement your style while ensuring comfort and functionality in your space.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Decor Styling Card -->
+        <div class="col-md-4">
+            <div class="card mb-4 shadow-lg hover-shadow text-light" style="transition: transform 0.2s;">
+                <div class="card-body text-center">
+                    <i class="fas fa-tape fa-3x mb-3" style="color: #9b59b6;"></i>
+                    <h5 class="card-title">Decor Styling</h5>
+                    <p class="card-text">Enhance your interiors with our decor styling services. We curate decorative elements that bring your vision to life and add personality to your space.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="blog" class="bg-dark text-white py-5">
+    <div class="container">
+        <!-- Introduction about Interflor Interior's Services -->
+        <h2 class="text-center mb-4">Discover Interflor Interior Services</h2>
+        <p class="text-center mb-5">At Interflor Interior, we specialize in offering a wide range of design solutions that transform spaces into stunning environments. Explore our services tailored to your needs.</p>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <article class="blog-post mb-4">
+                    <h3 class="blog-title">Residential Interior Design</h3>
+                    <p class="blog-excerpt">Our expert designers craft personalized residential spaces that reflect your lifestyle, creating a perfect balance of comfort and aesthetics.</p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="blog-post mb-4">
+                    <h3 class="blog-title">Commercial Interior Design</h3>
+                    <p class="blog-excerpt">Enhance your business environment with our tailored commercial design solutions, focusing on productivity, functionality, and brand identity.</p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="blog-post mb-4">
+                    <h3 class="blog-title">Luxury Interior Design</h3>
+                    <p class="blog-excerpt">Indulge in opulence with our luxury interior design services, where elegance meets innovation to create bespoke, high-end living spaces.</p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="blog-post mb-4">
+                    <h3 class="blog-title">Office Interior Design</h3>
+                    <p class="blog-excerpt">We create efficient, modern office spaces that foster creativity and collaboration while ensuring a professional and welcoming atmosphere.</p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="blog-post mb-4">
+                    <h3 class="blog-title">Hospitality Interior Design</h3>
+                    <p class="blog-excerpt">From boutique hotels to large restaurants, our hospitality design services focus on creating inviting and memorable spaces for your guests.</p>
+                </article>
+            </div>
+            <div class="col-md-4">
+                <article class="blog-post mb-4">
+                    <h3 class="blog-title">Retail Interior Design</h3>
+                    <p class="blog-excerpt">Our retail design services aim to enhance customer experience by creating aesthetically pleasing and functional retail spaces that encourage sales.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- New Featured Videos Section -->
+<section id="featured-videos" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Featured Videos</h2>
+        <div class="row">
+            <!-- Video 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="video-wrapper shadow-lg p-3">
+                    <div class="embed-responsive embed-responsive-16by9 mb-3">
+                        <video controls class="embed-responsive-item" title="How to Declutter Your Space">
+                            <source src="image16.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h4 class="video-title text-center">How to Declutter Your Space</h4>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="video-wrapper shadow-lg p-3">
+                    <div class="embed-responsive embed-responsive-16by9 mb-3">
+                        <iframe src="video.MP4" class="embed-responsive-item" title="DIY Home Decor Ideas" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <h4 class="video-title text-center">DIY Home Decor Ideas</h4>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="video-wrapper shadow-lg p-3">
+                    <div class="embed-responsive embed-responsive-16by9 mb-3">
+                        <video controls class="embed-responsive-item" title="Maximizing Small Spaces">
+                            <source src="image16.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <h4 class="video-title text-center">Maximizing Small Spaces</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Contact Section -->
+<section class="contact container" id="contact">
+    <h2 class="section-title">Contact Us</h2>
+    <p>If you have any questions, feel free to reach out to us!</p>
+    <a href="mailto:info@interfloor.com" class="btn btn-primary">Email Us</a>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="container">
+        <p>&copy; 2024 InterFloor n Interior. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+</body>
+</html>

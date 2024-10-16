@@ -2,6 +2,66 @@ body {
     font-family: Arial, sans-serif;
     background-color: #1f1f1f;
 }
+/* Global Styles */
+body {
+    background-color: #241313; /* Light gray background for the entire page */
+    color: #333; /* Default text color */
+    font-family: 'Arial', sans-serif; /* Font family for the body text */
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    background-color: #ffffff; /* White background for the navbar */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Larger font size for the brand name */
+    font-weight: bold; /* Make the brand name bold */
+    color: #007bff; /* Brand color */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem; /* Font size for nav links */
+    margin: 0 10px; /* Spacing between links */
+    color: #555; /* Slightly darker color for the links */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Change color on hover */
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    color: #343a40; /* Dark gray color for all headings */
+    font-weight: bold; /* Bold text for headings */
+}
+
+/* Specific Heading Colors (optional) */
+h1 {
+    color: #0056b3; /* Primary color for h1 */
+}
+
+h2 {
+    color: #6c757d; /* Secondary color for h2 */
+}
+
+h3 {
+    color: #007bff; /* Accent color for h3 */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* Adjust brand size on smaller screens */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem; /* Adjust link size on smaller screens */
+    }
+}
 
 
 
@@ -249,10 +309,76 @@ h2 {
 .project-item:hover .overlay {
     opacity: 1; /* Show overlay on hover */
 }
+.active {
+    background-color: #2ecc71 !important; /* Change the color of the active button */
+}
+.btn {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  /* Hover effect */
+  .btn:hover {
+    background-color: #8e44ad; /* Darker purple on hover */
+    transform: scale(1.1); /* Slightly enlarge the button */
+  }
+
+  /* Add a bounce effect on click */
+  .btn:active {
+    transform: scale(0.95); /* Button shrinks a bit when clicked */
+  }
+
+  /* Optional: Animated entrance effect for buttons */
+  .btn {
+    animation: fadeInUp 1s ease both;
+  }
+
+  /* Keyframes for entrance animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .project-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+  }
+
+  /* Hover effect: enlarge the image slightly and add shadow */
+  .project-image:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow on hover */
+  }
+
+  /* Animated entrance for images */
+  .project-image {
+    animation: fadeInZoom 1.5s ease both;
+  }
+
+  /* Keyframes for entrance animation */
+  @keyframes fadeInZoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.8); /* Start smaller */
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1); /* Final size */
+    }
+  }
 
 /* Optional: Make the row scrollable on smaller screens */
 @media (max-width: 768px) {
     .project-scroll {
         overflow-x: scroll; /* Allow scrolling on smaller screens */
     }
+}
+.card-img-top {
+    border-radius: 0.25rem; /* Optional: adds slight rounding to the image corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow around the image */
 }

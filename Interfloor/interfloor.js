@@ -57,4 +57,40 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   });
+  document.addEventListener("DOMContentLoaded", function () {
+    // Select all filter buttons
+    const filterButtons = document.querySelectorAll(".filter-btn");
+  
+    // Select all project items
+    const projectItems = document.querySelectorAll(".project-item");
+  
+    // Add event listener to each filter button
+    filterButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        // Get the data-filter value of the clicked button
+        const filter = this.getAttribute("data-filter").trim(); // Trim in case of any extra spaces
+  
+        // If the filter is 'all', display all projects
+        if (filter === "all") {
+          projectItems.forEach((item) => {
+            item.style.display = "block"; // Show all projects
+          });
+        } else {
+          // Otherwise, display the matching projects and hide others
+          projectItems.forEach((item) => {
+            // Check if the project item's data-category matches the filter
+            if (item.getAttribute("data-category") === filter) {
+              item.style.display = "block"; // Show matching project
+            } else {
+              item.style.display = "none"; // Hide non-matching projects
+            }
+          });
+        }
+  
+        // Update button active state
+        filterButtons.forEach((btn) => btn.classList.remove("btn-primary"));
+        this.classList.add("btn-primary");
+      });
+    });
+  });
   

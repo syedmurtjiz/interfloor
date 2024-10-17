@@ -22,4 +22,39 @@
     object-fit: cover; /* Cover the entire card */
 }
 
+.footer-link {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    transition: color 0.3s;
+}
 
+.footer-link:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #f8d210;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #f8d210;
+}
+
+.footer-link:hover:after {
+    transform: scaleX(1);
+}
+
+.footer-icon {
+    font-size: 1.5rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+    color: #f8d210;
+}

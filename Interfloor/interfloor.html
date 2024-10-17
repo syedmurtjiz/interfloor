@@ -1,15 +1,17 @@
-cd<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InterFloor n Interior</title>
+    <title>InterFlor n Interior</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <script src="interfloor.js"></script>
 </head>
-<body>
+<body style="height: 100vh;animation: backgroundAnimation 10s infinite alternate;">
 
     <header class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
@@ -26,123 +28,143 @@ cd<!DOCTYPE html>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#get-quote">Get Quote</a></li>
+                    
                 </ul>
             </div>
         </div>
     </header>
     
 <!-- Hero Section -->
-<section class="hero text-center" id="hero">
+<section class="hero text-center " id="hero" style="height: 60vh;background-size:cover;background-position:center;">
     <div class="container">
-        <h1 class="hero-heading animated fadeIn " style="color: #a68a07;">Welcome To Interfloor</h1>
+        <h1 class="hero-heading animated fadeIn mt-3" style="color: #a68a07;">Discover the Beauty of Nature with Interflor</h1>
     </div>
 </section>
 
 <!-- Project Filter -->
-<section class="project-filter text-center mt-5 mb-4">
-    <h1 class="font-weight-bold" style="color: #a68a07;">Our Recent Project Gallery</h1>
-    <div class="btn-group mt-3" role="group" aria-label="Project Filter">
-        <button type="button" class="btn btn-primary filter-btn" data-filter="all">All Projects</button>
-        <button type="button" class="btn btn-secondary filter-btn" data-filter="residential">Residential</button>
-        <button type="button" class="btn btn-secondary filter-btn" data-filter="hospitality">Hospitality</button>
-        <button type="button" class="btn btn-secondary filter-btn" data-filter="office">Office</button>
-        <button type="button" class="btn btn-secondary filter-btn" data-filter="commercial">Commercial</button>
+<section class="project-filter text-center mb-4 ">
+    <h1 class="font-weight-bold mt-5" style="color: #a68a07;">Recent Works</h1>
+    <div class="btn-block mt-3 mb-5  " role="group" aria-label="Project Filter">
+        <button type="button" class="btn btn-primary filter-btn" data-filter="all">Entire Showcase</button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="residential">Domestic Designs</button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="hospitality">Inviting Retreats</button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="office">Business Environments</button>
+        <button type="button" class="btn btn-secondary filter-btn" data-filter="commercial">Enterprise Spaces</button>
     </div>
 </section>
 
 
 <!-- Project Gallery -->
-<section class="project-gallery container" id="project-gallery">
-    <div class="row">
+<section class="project-gallery container  mt-n4" id="project-gallery">
+    <div class="row g-4 "> <!-- Added g-4 for uniform gaps between columns -->
 
         <!-- Residential Projects -->
-        <div class="col-md-4 project-item" data-category="residential">
-            <img src="image1.jpg" alt="Modern family home featuring sustainable design" class="img-fluid p-3 border">
-            <div class="overlay">
-                <h3>Residential Project 1</h3>
-                <p>Modern family home featuring sustainable design.</p>
+        <div class="col-md-4 project-item mb-3 mt-3" data-category="residential">
+            <div class="card h-100 border border-light rounded"> <!-- Bootstrap classes for border and rounded -->
+                <img src="image1.jpg" alt="Modern family home featuring sustainable design" class="card-img-top img-custom">
+                <div class="card-body" style="background-color: #ead3f4;">
+                    <h3 class="card-title">Residential Project 1</h3>
+                    <p class="card-text">Modern family home featuring sustainable design.</p>
+                </div>
             </div>
         </div>
-        <div class="col-md-4 project-item" data-category="residential">
-            <img src="image15.jpg" alt="Elegant townhouse with a modern flair" class="img-fluid p-3 border">
-            <div class="overlay">
-                <h3>Residential Project 2</h3>
-                <p>Elegant townhouse with a modern flair.</p>
+        <div class="col-md-4 project-item mb-3 mt-3" data-category="residential">
+            <div class="card h-100 border border-light rounded">
+                <img src="image15.jpg" alt="Elegant townhouse with a modern flair" class="card-img-top img-custom">
+                <div class="card-body" style="background-color: #ead3f4;">
+                    <h3 class="card-title">Residential Project 2</h3>
+                    <p class="card-text">Elegant townhouse with a modern flair.</p>
+                </div>
             </div>
         </div>
-        <div class="col-md-4 project-item" data-category="residential">
-            <img src="image9.jpg" alt="Eco-friendly home integrated with nature" class="img-fluid p-3 border">
-            <div class="overlay">
-                <h3>Residential Project 3</h3>
-                <p>Eco-friendly home integrated with nature.</p>
+        <div class="col-md-4 project-item mb-3 mt-3"  data-category="residential">
+            <div class="card h-100 border border-light rounded">
+                <img src="image9.jpg" alt="Eco-friendly home integrated with nature" class="card-img-top img-custom">
+                <div class="card-body" style="background-color: #ead3f4;">
+                    <h3 class="card-title">Residential Project 3</h3>
+                    <p class="card-text">Eco-friendly home integrated with nature.</p>
+                </div>
             </div>
         </div>
 
         <!-- Hospitality Projects -->
-        <div class="col-md-4 project-item" data-category="hospitality">
-            <img src="30.jpg" alt="Charming boutique hotel with a cozy ambiance" class="img-fluid p-3 border">
-            <div class="overlay">
-                <h3>Hospitality Project 1</h3>
-                <p>Charming boutique hotel with a cozy ambiance.</p>
+        <div class="col-md-4 project-item mb-3" data-category="hospitality">
+            <div class="card h-100 border border-light rounded">
+                <img src="30.jpg" alt="Charming boutique hotel with a cozy ambiance" class="card-img-top img-custom">
+                <div class="card-body" style="background-color: #ead3f4;">
+                    <h3 class="card-title">Hospitality Project 1</h3>
+                    <p class="card-text">Charming boutique hotel with a cozy ambiance.</p>
+                </div>
             </div>
         </div>
-        <div class="col-md-4 project-item" data-category="hospitality">
-            <img src="image6.jpg" alt="Luxurious resort with stunning ocean views" class="img-fluid p-3 border">
-            <div class="overlay">
-                <h3>Hospitality Project 2</h3>
-                <p>Luxurious resort with stunning ocean views.</p>
+        <div class="col-md-4 project-item mb-3" data-category="hospitality">
+            <div class="card h-100 border border-light rounded">
+                <img src="image6.jpg" alt="Luxurious resort with stunning ocean views" class="card-img-top img-custom">
+                <div class="card-body" style="background-color: #ead3f4;">
+                    <h3 class="card-title">Hospitality Project 2</h3>
+                    <p class="card-text">Luxurious resort with stunning ocean views.</p>
+                </div>
             </div>
         </div>
-        <div class="col-md-4 project-item" data-category="hospitality">
-            <img src="image10.jpg" alt="Modern inn with unique local touches" class="img-fluid p-3 border">
-            <div class="overlay">
-                <h3>Hospitality Project 3</h3>
-                <p>Modern inn with unique local touches.</p>
+        <div class="col-md-4 project-item mb-3" data-category="hospitality">
+            <div class="card h-100 border border-light rounded">
+                <img src="image10.jpg" alt="Modern inn with unique local touches" class="card-img-top img-custom">
+                <div class="card-body" style="background-color: #ead3f4;">
+                    <h3 class="card-title">Hospitality Project 3</h3>
+                    <p class="card-text">Modern inn with unique local touches.</p>
+                </div>
             </div>
         </div>
 
         <!-- Office Projects -->
-        <div class="col-md-4 project-item" data-category="office">
-            <img src="28.jpg" alt="Innovative workspace designed for collaboration" class="img-fluid p-3 border">
-            <div class="overlay">
-                <h3>Office Project 1</h3>
-                <p>Innovative workspace designed for collaboration.</p>
+        <div class="col-md-4 project-item mb-3" data-category="office">
+            <div class="card h-100 border border-light rounded">
+                <img src="28.jpg" alt="Innovative workspace designed for collaboration" class="card-img-top img-custom">
+                <div class="card-body" style="background-color: #ead3f4;">
+                    <h3 class="card-title">Office Project 1</h3>
+                    <p class="card-text">Innovative workspace designed for collaboration.</p>
+                </div>
             </div>
         </div>
-        <div class="col-md-4 project-item" data-category="office">
-            <img src="image7.jpg" alt="High-tech office designed for productivity" class="img-fluid p-3 border">
-            <div class="overlay">
-                <h3>Office Project 2</h3>
-                <p>High-tech office designed for productivity.</p>
+        <div class="col-md-4 project-item mb-3" data-category="office">
+            <div class="card h-100 border border-light rounded">
+                <img src="image7.jpg" alt="High-tech office designed for productivity" class="card-img-top img-custom">
+                <div class="card-body" style="background-color: #ead3f4;">
+                    <h3 class="card-title">Office Project 2</h3>
+                    <p class="card-text">High-tech office designed for productivity.</p>
+                </div>
             </div>
         </div>
-        <div class="col-md-4 project-item" data-category="office">
-            <img src="image11.jpg" alt="Dynamic work environment fostering creativity" class="img-fluid p-3 border">
-            <div class="overlay">
-                <h3>Office Project 3</h3>
-                <p>Dynamic work environment fostering creativity.</p>
+        <div class="col-md-4 project-item mb-3" data-category="office">
+            <div class="card h-100 border border-light rounded">
+                <img src="image11.jpg" alt="Dynamic work environment fostering creativity" class="card-img-top img-custom">
+                <div class="card-body" style="background-color: #ead3f4;">
+                    <h3 class="card-title">Office Project 3</h3>
+                    <p class="card-text">Dynamic work environment fostering creativity.</p>
+                </div>
             </div>
         </div>
 
         <!-- Commercial Projects -->
-        <div class="col-md-4 project-item" data-category="commercial">
-            <img src="20.jpg" alt="Contemporary retail space maximizing customer experience" class="img-fluid p-3 border">
-            <div class="overlay">
-                <h3>Commercial Project 1</h3>
-                <p>Contemporary retail space maximizing customer experience.</p>
+        <div class="col-md-4 project-item mb-3" data-category="commercial">
+            <div class="card h-100 border border-light rounded">
+                <img src="20.jpg" alt="Contemporary retail space maximizing customer experience" class="card-img-top img-custom">
+                <div class="card-body" style="background-color: #ead3f4;">
+                    <h3 class="card-title">Commercial Project 1</h3>
+                    <p class="card-text">Contemporary retail space maximizing customer experience.</p>
+                </div>
             </div>
         </div>
-        <div class="col-md-4 project-item" data-category="commercial">
-            <img src="image8.jpg" alt="State-of-the-art showroom highlighting products" class="img-fluid p-3 border">
-            <div class="overlay">
-                <h3>Commercial Project 2</h3>
-                <p>State-of-the-art showroom highlighting products.</p>
+        <div class="col-md-4 project-item mb-3" data-category="commercial">
+            <div class="card h-100 border border-light rounded">
+                <img src="image8.jpg" alt="State-of-the-art showroom highlighting products" class="card-img-top img-custom">
+                <div class="card-body" style="background-color: #ead3f4;">
+                    <h3 class="card-title">Commercial Project 2</h3>
+                    <p class="card-text">State-of-the-art showroom highlighting products.</p>
+                </div>
             </div>
         </div>
-
     </div>
 </section>
 
@@ -150,229 +172,309 @@ cd<!DOCTYPE html>
 <!-- Services Section -->
 <section class="services container mt-5" id="services">
     <!-- Company Introduction -->
-    <div class="text-center mb-5   text-light mt-n5 ">
-        <h2 class="section-title display-4 font-weight-bold" style="color: #a68a07;">Our Interior Design Services</h2>
-        <p class="lead   ">Discover a comprehensive range of bespoke services designed to transform your living and working spaces into stunning reflections of your individuality. From conceptualization to execution, we ensure every detail aligns with your desires, delivering results that inspire and delight :</p>
+    <div class="text-center mb-5 text-light mt-n5">
+        <h2 class="section-title display-4 font-weight-bold" style="color: #c7a44e; letter-spacing: 2px;">Expertise in Interior Design</h2>
+        <p class="lead" style="font-size: 1.2rem; color: #f5f5f5;">At Interflor Interior, we specialize in crafting bespoke spaces that reflect sophistication, functionality, and elegance. Our comprehensive services cater to your unique vision, delivering interiors that inspire and elevate your lifestyle:</p>
     </div>
- 
+
     <div class="row">
-        <!-- Color Consultation Card -->
+        <!-- Interior Design & Consultation -->
         <div class="col-md-4">
-            <div class="card mb-4 shadow-lg hover-shadow text-light bg-info" style="transition: transform 0.2s;">
-                <div class="card-body text-center ">
-                    <i class="fas fa-paint-brush fa-3x mb-3" style="color: #4a90e2;"></i>
-                    <h5 class="card-title">Color Consultation</h5>
-                    <p class="card-text">Our color experts provide tailored consultations to help you choose the perfect palette for your space, enhancing mood and aesthetics.</p>
+            <div class="card mb-4 shadow-lg" style="border: 1px solid #ccc; border-radius: 15px; overflow: hidden; transition: transform 0.3s ease-in-out;">
+                <div class="card-body text-center" style="padding: 0;">
+                    <div style="padding: 1.5rem; background-color: #343a40; border-radius: 15px;">
+                        <i class="fas fa-ruler-combined fa-3x mb-3" style="color: #c7a44e;"></i>
+                        <h5 class="card-title" style="color: #c7a44e; font-weight: bold;">Interior Design & Consultation</h5>
+                        <p class="card-text" style="color: whitesmoke;">Our expert designers work closely with you to develop a concept that brings your vision to life, combining style with functionality.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Space Planning Card -->
+        <!-- Bespoke Furniture Design -->
         <div class="col-md-4">
-            <div class="card mb-4 shadow-lg hover-shadow text-light bg-info" style="transition: transform 0.2s; " >
-                <div class="card-body text-center">
-                    <i class="fas fa-couch fa-3x mb-3" style="color: #7ed321;"></i>
-                    <h5 class="card-title">Space Planning</h5>
-                    <p class="card-text">Maximize functionality with our space planning services. We design layouts that make the best use of available space, ensuring comfort and flow.</p>
+            <div class="card mb-4 shadow-lg" style="border: 1px solid #ccc; border-radius: 15px; overflow: hidden; transition: transform 0.3s ease-in-out;">
+                <div class="card-body text-center" style="padding: 0;">
+                    <div style="padding: 1.5rem; background-color: #343a40; border-radius: 15px;">
+                        <i class="fas fa-couch fa-3x mb-3" style="color: #a68a07;"></i>
+                        <h5 class="card-title" style="color: #a68a07; font-weight: bold;">Bespoke Furniture Design</h5>
+                        <p class="card-text" style="color: whitesmoke;">We create custom furniture pieces that perfectly complement your space, ensuring harmony between aesthetics and comfort.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Lighting Design Card -->
+        <!-- Lighting Solutions -->
         <div class="col-md-4">
-            <div class="card mb-4 shadow-lg hover-shadow text-light bg-info" style="transition: transform 0.2s;">
-                <div class="card-body text-center">
-                    <i class="fas fa-lightbulb fa-3x mb-3" style="color: #f39c12;"></i>
-                    <h5 class="card-title">Lighting Design</h5>
-                    <p class="card-text">Illuminate your space with our lighting design services. We create customized lighting solutions that enhance both functionality and ambiance.</p>
+            <div class="card mb-4 shadow-lg" style="border: 1px solid #ccc; border-radius: 15px; overflow: hidden; transition: transform 0.3s ease-in-out;">
+                <div class="card-body text-center" style="padding: 0;">
+                    <div style="padding: 1.5rem; background-color: #343a40; border-radius: 15px;">
+                        <i class="fas fa-lightbulb fa-3x mb-3" style="color: #f1c40f;"></i>
+                        <h5 class="card-title" style="color: #a68a07; font-weight: bold;">Lighting Solutions</h5>
+                        <p class="card-text" style="color: whitesmoke;">Our lighting designs enhance the ambiance of your space, creating the perfect balance between warmth, mood, and functionality.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Interior Renovation Card -->
+        <!-- Custom Window Treatments -->
         <div class="col-md-4">
-            <div class="card mb-4 shadow-lg hover-shadow text-light bg-info" style="transition: transform 0.2s;">
-                <div class="card-body text-center">
-                    <i class="fas fa-archway fa-3x mb-3" style="color: #e74c3c;"></i>
-                    <h5 class="card-title">Interior Renovation</h5>
-                    <p class="card-text">Transform your home with our interior renovation services. We specialize in remodeling spaces to reflect your personal style and needs.</p>
+            <div class="card mb-4 shadow-lg" style="border: 1px solid #ccc; border-radius: 15px; overflow: hidden; transition: transform 0.3s ease-in-out;">
+                <div class="card-body text-center" style="padding: 0;">
+                    <div style="padding: 1.5rem; background-color: #343a40; border-radius: 15px;">
+                        <i class="fas fa-window-maximize fa-3x mb-3" style="color: #a68a07;"></i>
+                        <h5 class="card-title" style="color: #a68a07; font-weight: bold;">Custom Window Treatments</h5>
+                        <p class="card-text" style="color: whitesmoke;">Our tailored window treatments add elegance and privacy to your interiors, available in a range of luxurious materials.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Furniture Selection Card -->
+        <!-- Space Optimization -->
         <div class="col-md-4">
-            <div class="card mb-4 shadow-lg hover-shadow text-light bg-info" style="transition: transform 0.2s;">
-                <div class="card-body text-center">
-                    <i class="fas fa-home fa-3x mb-3" style="color: #3498db;"></i>
-                    <h5 class="card-title">Furniture Selection</h5>
-                    <p class="card-text">Our experts assist in selecting the right furniture pieces that complement your style while ensuring comfort and functionality in your space.</p>
+            <div class="card mb-4 shadow-lg" style="border: 1px solid #ccc; border-radius: 15px; overflow: hidden; transition: transform 0.3s ease-in-out;">
+                <div class="card-body text-center" style="padding: 0;">
+                    <div style="padding: 1.5rem; background-color: #343a40; border-radius: 15px;">
+                        <i class="fas fa-archway fa-3x mb-3" style="color: #a68a07;"></i>
+                        <h5 class="card-title" style="color: #a68a07; font-weight: bold;">Space Optimization</h5>
+                        <p class="card-text" style="color: whitesmoke;">We maximize the potential of your space, creating layouts that offer seamless flow and function without sacrificing beauty.</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- Decor Styling Card -->
+        <!-- Styling & Accessories -->
         <div class="col-md-4">
-            <div class="card mb-4 shadow-lg hover-shadow text-light bg-info" style="transition: transform 0.2s;">
-                <div class="card-body text-center">
-                    <i class="fas fa-tape fa-3x mb-3" style="color: #9b59b6;"></i>
-                    <h5 class="card-title">Decor Styling</h5>
-                    <p class="card-text">Enhance your interiors with our decor styling services. We curate decorative elements that bring your vision to life and add personality to your space.</p>
+            <div class="card mb-4 shadow-lg" style="border: 1px solid #ccc; border-radius: 15px; overflow: hidden; transition: transform 0.3s ease-in-out;">
+                <div class="card-body text-center" style="padding: 0;">
+                    <div style="padding: 1.5rem; background-color: #343a40; border-radius: 15px;">
+                        <i class="fas fa-tape fa-3x mb-3" style="color: #a68a07;"></i>
+                        <h5 class="card-title" style="color: #a68a07; font-weight: bold;">Styling & Accessories</h5>
+                        <p class="card-text" style="color: whitesmoke;">Our finishing touches—carefully selected accessories and decor—infuse your space with character, charm, and elegance.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<section id="blog" class="bg-black text-white py-5">
+<section id="blog" class="text-white py-5">
     <div class="container">
         <!-- Introduction about Interflor Interior's Services -->
-        <h2 class="text-center mb-4 mt-n5" style="color: #a68a07;">Discover Interflor Interior Services</h2>
-        <p class="text-center mb-5">At Interflor Interior, we specialize in offering a wide range of design solutions that transform spaces into stunning environments. Explore our services tailored to your needs.</p>
-        
+        <h2 class="text-center mb-4 mt-n5" style="color: #d4af37; font-weight: bold;">Discover Interflor Interior Services</h2>
+        <p class="text-center mb-5 lead">At Interflor Interior, we specialize in offering a wide range of design solutions that transform spaces into stunning environments. Explore our services tailored to your needs.</p>
+
         <div class="row">
-            <div class="col-md-4">
-                <article class="blog-post mb-4">
-                    <h3 class="blog-title bg-transparent">Residential Interior Design</h3>
-                    <p class="blog-excerpt">Our expert designers craft personalized residential spaces that reflect your lifestyle, creating a perfect balance of comfort and aesthetics.</p>
+            <!-- Blog Post 1 -->
+            <div class="col-md-4 mb-4">
+                <article class="blog-post h-100 p-4 bg-black rounded shadow-sm" style="border: 1px solid #d4af37;">
+                    <h3 class="blog-title text-center mb-3" style="color: #d4af37;">Residential Interior Design</h3>
+                    <p class="blog-excerpt text-center">Our expert designers craft personalized residential spaces that reflect your lifestyle, creating a perfect balance of comfort and aesthetics.</p>
                 </article>
             </div>
-            <div class="col-md-4">
-                <article class="blog-post mb-4">
-                    <h3 class="blog-title">Commercial Interior Design</h3>
-                    <p class="blog-excerpt">Enhance your business environment with our tailored commercial design solutions, focusing on productivity, functionality, and brand identity.</p>
+
+            <!-- Blog Post 2 -->
+            <div class="col-md-4 mb-4">
+                <article class="blog-post h-100 p-4 bg-black rounded shadow-sm" style="border: 1px solid #d4af37;">
+                    <h3 class="blog-title text-center mb-3" style="color: #d4af37;">Commercial Interior Design</h3>
+                    <p class="blog-excerpt text-center">Enhance your business environment with our tailored commercial design solutions, focusing on productivity, functionality, and brand identity.</p>
                 </article>
             </div>
-            <div class="col-md-4">
-                <article class="blog-post mb-4">
-                    <h3 class="blog-title">Luxury Interior Design</h3>
-                    <p class="blog-excerpt">Indulge in opulence with our luxury interior design services, where elegance meets innovation to create bespoke, high-end living spaces.</p>
+
+            <!-- Blog Post 3 -->
+            <div class="col-md-4 mb-4">
+                <article class="blog-post h-100 p-4 bg-black rounded shadow-sm" style="border: 1px solid #d4af37;">
+                    <h3 class="blog-title text-center mb-3" style="color: #d4af37;">Luxury Interior Design</h3>
+                    <p class="blog-excerpt text-center">Indulge in opulence with our luxury interior design services, where elegance meets innovation to create bespoke, high-end living spaces.</p>
                 </article>
             </div>
-            <div class="col-md-4">
-                <article class="blog-post mb-4">
-                    <h3 class="blog-title">Office Interior Design</h3>
-                    <p class="blog-excerpt">We create efficient, modern office spaces that foster creativity and collaboration while ensuring a professional and welcoming atmosphere.</p>
+
+            <!-- Blog Post 4 -->
+            <div class="col-md-4 mb-4">
+                <article class="blog-post h-100 p-4 bg-black rounded shadow-sm" style="border: 1px solid #d4af37;">
+                    <h3 class="blog-title text-center mb-3" style="color: #d4af37;">Office Interior Design</h3>
+                    <p class="blog-excerpt text-center">We create efficient, modern office spaces that foster creativity and collaboration while ensuring a professional and welcoming atmosphere.</p>
                 </article>
             </div>
-            <div class="col-md-4">
-                <article class="blog-post mb-4">
-                    <h3 class="blog-title">Hospitality Interior Design</h3>
-                    <p class="blog-excerpt">From boutique hotels to large restaurants, our hospitality design services focus on creating inviting and memorable spaces for your guests.</p>
+
+            <!-- Blog Post 5 -->
+            <div class="col-md-4 mb-4">
+                <article class="blog-post h-100 p-4 bg-black rounded shadow-sm" style="border: 1px solid #d4af37;">
+                    <h3 class="blog-title text-center mb-3" style="color: #d4af37;">Hospitality Interior Design</h3>
+                    <p class="blog-excerpt text-center">From boutique hotels to large restaurants, our hospitality design services focus on creating inviting and memorable spaces for your guests.</p>
                 </article>
             </div>
-            <div class="col-md-4">
-                <article class="blog-post mb-4">
-                    <h3 class="blog-title">Retail Interior Design</h3>
-                    <p class="blog-excerpt">Our retail design services aim to enhance customer experience by creating aesthetically pleasing and functional retail spaces that encourage sales.</p>
+
+            <!-- Blog Post 6 -->
+            <div class="col-md-4 mb-4">
+                <article class="blog-post h-100 p-4 bg-black rounded shadow-sm" style="border: 1px solid #d4af37;">
+                    <h3 class="blog-title text-center mb-3" style="color: #d4af37;">Retail Interior Design</h3>
+                    <p class="blog-excerpt text-center">Our retail design services aim to enhance customer experience by creating aesthetically pleasing and functional retail spaces that encourage sales.</p>
                 </article>
             </div>
         </div>
     </div>
 </section>
-
 <!-- New Featured Videos Section -->
-<section id="featured-videos" class="py-5">
+<section id="featured-videos" class="py-5" >
     <div class="container">
-        <h2 class="text-center mb-5" style="color: #a68a07;">Featured Videos</h2>
+        <h2 class="text-center mb-5 mt-n5" style="color: #f0c14b; font-weight: bold;">Featured Videos</h2>
         <div class="row">
             <!-- Video 1 -->
             <div class="col-md-4 mb-4">
-                <div class="video-wrapper shadow-lg p-3">
+                <div class="video-wrapper shadow-lg p-3 rounded bg-dark" style="transition: transform 0.3s; border: 1px solid #f0c14b;">
                     <div class="embed-responsive embed-responsive-16by9 mb-3">
-                        <video controls class="embed-responsive-item" title="How to Declutter Your Space">
+                        <video controls class="embed-responsive-item rounded" title="How to Declutter Your Space">
                             <source src="image16.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <h3 class="video-title text-center" style="color: #a68a07;">How to Declutter Your Space</h3>
+                    <h3 class="video-title text-center mt-2" style="color: #f0c14b;">How to Declutter Your Space</h3>
                 </div>
             </div>
 
             <!-- Video 2 -->
             <div class="col-md-4 mb-4">
-                <div class="video-wrapper shadow-lg p-3">
+                <div class="video-wrapper shadow-lg p-3 rounded bg-dark" style="transition: transform 0.3s; border: 1px solid #f0c14b;">
                     <div class="embed-responsive embed-responsive-16by9 mb-3">
-                        <video controls class="embed-responsive-item" title="DIY Home Decor Ideas">
+                        <video controls class="embed-responsive-item rounded" title="DIY Home Decor Ideas">
                             <source src="video.MP4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <h3 class="video-title text-center" style="color: #a68a07;">DIY Home Decor Ideas</h3>
+                    <h3 class="video-title text-center mt-2" style="color: #f0c14b;">DIY Home Decor Ideas</h3>
                 </div>
             </div>
             
-
             <!-- Video 3 -->
             <div class="col-md-4 mb-4">
-                <div class="video-wrapper shadow-lg p-3">
+                <div class="video-wrapper shadow-lg p-3 rounded bg-dark" style="transition: transform 0.3s; border: 1px solid #f0c14b;">
                     <div class="embed-responsive embed-responsive-16by9 mb-3">
-                        <video controls class="embed-responsive-item" title="Maximizing Small Spaces">
+                        <video controls class="embed-responsive-item rounded" title="Maximizing Small Spaces">
                             <source src="image16.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
-                    <h3 class="video-title text-center" style="color: #a68a07;">Maximizing Small Spaces</h3>
+                    <h3 class="video-title text-center mt-2" style="color: #f0c14b;">Maximizing Small Spaces</h3>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<section id="contact" class="py-5">
+<section id="contact" class="py-5 mt-n5" >
     <div class="container">
-        <h2 class="text-center mb-5" style="color: #a68a07;">Contact Us</h2>
-        <div class="row">
+        <h2 class="text-center mb-5" style="color: #a68a07; font-weight: bold;">Contact Us</h2>
+        <div class="row justify-content-center">
             <!-- Contact Card 1 -->
             <div class="col-md-3 mb-4">
-                <div class="card shadow-lg">
-                    <img src="shery.jpg" class="card-img-top" alt="Shehryar Asad" style="height: 200px; width: 100%; object-fit: cover; margin-top: 15px;"> <!-- Adjust margin value as needed -->
+                <div class="card shadow-lg h-100 rounded animate-card">
+                    <div class="card-image-wrapper">
+                        <img src="asad.jpg" class="card-img-top rounded-top animate-image" alt="Shehryar Asad" style="object-fit: cover; ">
+                    </div>
                     <div class="card-body text-center">
-                        <h5 class="card-title" style="color: #a68a07;">Shehryar Asad</h5>
-                        <p class="card-text">Email: shehryar@asad.com</p>
-                        <p class="card-text">Phone: +923331916939</p>
-                        <p class="card-text">Address: Rawalpindi</p>
+                        <h5 class="card-title" style="color: #a68a07; font-weight: bold;">Asad Mehmood</h5>
+                        <p class="card-text"><i class="fas fa-envelope"></i> interflor@outlook.com</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> +923355077551 </p>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> Rawalpindi</p>
                     </div>
                 </div>
             </div>
             
-            
+
             <!-- Contact Card 2 -->
             <div class="col-md-3 mb-4">
-                <div class="card shadow-lg">
-                    <img src="path/to/image2.jpg" class="card-img-top" alt="Jane Smith" style="height: 300px; object-fit: cover;">
+                <div class="card shadow-lg h-100 rounded animate-card">
+                    <div class="card-image-wrapper">
+                        <img src="danish.jpg" class="card-img-top rounded-top animate-image" alt="Danish Asad" style="object-fit: cover; object-position:top;" > <!-- Increased width -->
+                    </div>
                     <div class="card-body text-center">
-                        <h5 class="card-title" style="color: #a68a07;"></h5>
-                        <p class="card-text">Email:</p>
-                        <p class="card-text">Phone: </p>
-                        <p class="card-text">Address: </p>
+                        <h5 class="card-title" style="color: #a68a07; font-weight: bold;">Danish Asad</h5>
+                        <p class="card-text"><i class="fas fa-envelope"></i> jane@smith.com</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> +923335212695</p>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> Rawalpindi</p>
                     </div>
                 </div>
             </div>
-
+       
             <!-- Contact Card 3 -->
             <div class="col-md-3 mb-4">
-                <div class="card shadow-lg">
-                    <img src="path/to/image3.jpg" class="card-img-top" alt="Mike Johnson" style="height: 200px; object-fit: cover;">
+                <div class="card shadow-lg h-100 rounded animate-card">
+                    <div class="card-image-wrapper">
+                        <img src="arsalan.jpg" class="card-img-top rounded-top animate-image" alt="Arslan Asad" style="object-fit: cover; object-position:top;" > <!-- Increased width -->
+                    </div>
                     <div class="card-body text-center">
-                        <h5 class="card-title" style="color: #a68a07;"></h5>
-                        <p class="card-text">Email: </p>
-                        <p class="card-text">Phone: </p>
-                        <p class="card-text">Address: </p>
+                        <h5 class="card-title" style="color: #a68a07; font-weight: bold;">Arslan Asad</h5>
+                        <p class="card-text"><i class="fas fa-envelope"></i> mike@johnson.com</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> +923332750569</p>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> Rawalpindi</p>
                     </div>
                 </div>
             </div>
 
             <!-- Contact Card 4 -->
             <div class="col-md-3 mb-4">
-                <div class="card shadow-lg">
-                    <img src="path/to/image4.jpg" class="card-img-top" alt="Emily Davis" style="height: 200px; object-fit: cover;">
+                <div class="card shadow-lg h-100 rounded animate-card">
+                    <div class="card-image-wrapper">
+                        <img src="shery.jpg" class="card-img-top rounded-top animate-image" alt="Shehryar Asad" > <!-- Increased width -->
+                    </div>
                     <div class="card-body text-center">
-                        <h5 class="card-title" style="color: #a68a07;"></h5>
-                        <p class="card-text">Email:</p>
-                        <p class="card-text">Phone:</p>
-                        <p class="card-text">Address:</p>
+                        <h5 class="card-title" style="color: #a68a07; font-weight: bold;">Shehryar Asad</h5>
+                        <p class="card-text"><i class="fas fa-envelope"></i> shehryar640@outlook.com</p>
+                        <p class="card-text"><i class="fas fa-phone"></i> +923331916939</p>
+                        <p class="card-text"><i class="fas fa-map-marker-alt"></i> Rawalpindi</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<footer class="bg-dark text-white pt-4 pb-2">
+    <div class="container">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-md-4">
+                <h5>Interfloor</h5>
+                <p>Your trusted partner in flooring solutions. Providing quality products and services to meet your needs.</p>
+            </div>
+
+            <!-- Navigation Links -->
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="text-white">Home</a></li>
+                    <li><a href="#about" class="text-white">About Us</a></li>
+                    <li><a href="#services" class="text-white">Services</a></li>
+                    <li><a href="#contact" class="text-white">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="col-md-4">
+                <h5>Contact Us</h5>
+                <p><i class="fas fa-envelope"></i> info@interfloor.com</p>
+                <p><i class="fas fa-phone"></i> +1 (234) 567-8901</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Flooring St, City, Country</p>
+            </div>
+        </div>
+
+        <!-- Social Media Links -->
+        <div class="row mt-4">
+            <div class="col text-center">
+                <h5>Follow Us</h5>
+                <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/interflor_interiors/?hl=en" class="text-white" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+            </div>
+        </div>
+        
+        <div class="row mt-4">
+            <div class="col text-center">
+                <p>&copy; 2024 Interfloor. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- FontAwesome Icons (Make sure to include this in the <head> or <footer>) -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

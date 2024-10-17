@@ -1,7 +1,7 @@
 
   // Background image changing functionality
   const images = [
-      'back.png', // Replace with your actual image paths
+      '24.jpg', // Replace with your actual image paths
       
   ];
 
